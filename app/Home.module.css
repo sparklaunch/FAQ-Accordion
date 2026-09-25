@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .card {
@@ -26,4 +30,29 @@
 
 .faqList {
 	list-style: none;
+}
+
+.mobileBackground {
+	display: none;
+	width: 100%;
+	height: auto;
+}
+
+.desktopBackground {
+	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 800px) {
+	.card {
+		max-width: 80%;
+	}
+
+	.mobileBackground {
+		display: block;
+	}
+
+	.desktopBackground {
+		display: none;
+	}
 }
