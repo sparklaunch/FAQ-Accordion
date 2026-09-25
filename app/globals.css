@@ -1,5 +1,16 @@
+:root {
+	--color-background: rgb(248, 235, 255);
+	--color-header: rgb(43, 20, 45);
+	--color-text: rgb(111, 98, 111);
+	--color-accent: rgb(148, 48, 224);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--color-background);
 }
